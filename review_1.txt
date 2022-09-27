@@ -1,0 +1,2 @@
+Rien de spécial a redire dans find motive.
+Par contre pour is prime il me semble que c'est tous les nombres inférieurs à racine de x et pas /2 et vous pouvez tester uniquement les nombres impairs étant donné que tous les multiples de 2 ne sont pas premiers. 
