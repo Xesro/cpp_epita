@@ -13,7 +13,7 @@ int main (int argc, char *argv[])
 
     if (file.is_open()) {
         string word;
-        while(getline(file, word, ' ')) {
+        while(file >> word) {
             if(regex_match(word, reg))
                 count++;
         }
