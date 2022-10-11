@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
-set (CMAKE CXX STANDARD 20)
-add_compile_options(-Wall -Wextra)
-project(vector)
+project(cartesian_vector_param)
 
-add_executable(main main.cpp vector.cpp)
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(main vector.cpp main.cpp)
