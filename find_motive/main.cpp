@@ -7,6 +7,7 @@ using namespace std;
 int main (int argc, char *argv[])
 {
     ifstream file (argv[1]);
+    auto spattern = string (argv[2]);
     string pattern = ".*" + string (argv[2]) + ".*";
     regex reg (pattern);
     long count = 0;
@@ -14,7 +15,7 @@ int main (int argc, char *argv[])
     if (file.is_open()) {
         string word;
         while(file >> word) {
-            if(regex_match(word, reg))
+            if(word.find(spattern) != string::npos)
                 count++;
         }
         cout << "The file " + string(argv[1]) + " contains " + to_string(count) +  " words containing the motive " + string(argv[2]);
