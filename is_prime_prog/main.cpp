@@ -23,10 +23,9 @@ bool isPrime(long number)
 
 int main()
 {
-    string primeNumber;
-    while(getline(cin, primeNumber, ' ')) {
-            long number = stol(primeNumber);
-            cout << to_string(number) + " is a Prime: " + (isPrime(number) ? "True\n" : "False\n");
+    long long primeNumber;
+    while(cin >> primeNumber) {
+            cout << primeNumber <<  " is a Prime: " << (isPrime(primeNumber) ? "True\n" : "False\n");
     }
 
     return 0;
